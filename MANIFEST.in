@@ -1,0 +1,7 @@
+include LICENSE
+include README.md
+recursive-include authz/templates *
+recursive-include authz/static *
+recursive-include authz/migrations *
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
