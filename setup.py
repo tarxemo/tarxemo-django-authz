@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="tarxemo-django-authz",
-    version="0.2.0",
+    version="0.2.1",
     author="TarXemo",
     description="A comprehensive, reusable Django authorization framework supporting RBAC and PBAC",
     long_description=long_description,
@@ -18,7 +18,6 @@ setup(
         "Environment :: Web Environment",
         "Framework :: Django",
         "Framework :: Django :: 3.2",
-        "Framework :: Django :: 4.0",
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
@@ -34,11 +33,11 @@ setup(
     ],
     python_requires=">=3.8",
     install_requires=[
-        "Django>=3.2",
-        "graphene-django>=3.0",
-        "tarxemo-django-graphene-utils>=0.1.2",
+        "Django",
+        "graphene-django",
+        "tarxemo-django-graphene-utils",
     ],
     extras_require={
-        "drf": ["djangorestframework>=3.12"],
+        "drf": ["djangorestframework"],
     },
 )
