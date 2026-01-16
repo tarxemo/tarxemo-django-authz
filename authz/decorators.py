@@ -247,7 +247,7 @@ def require_graphql_permission(permission_code: Optional[str], return_type = Non
                 from tarxemo_django_graphene_utils import build_error_response
                 return return_type(
                     data=None,
-                    response=build_error_response("Authentication required", code=401)
+                    response=build_error_response("Authentication required")
                 )
             
             # 2. Check Permission (if code provided)
@@ -257,7 +257,7 @@ def require_graphql_permission(permission_code: Optional[str], return_type = Non
                     from tarxemo_django_graphene_utils import build_error_response
                     return return_type(
                         data=None,
-                        response=build_error_response(f"Permission denied. Requires '{permission_code}'.", code=403)
+                        response=build_error_response(f"Permission denied. Requires '{permission_code}'.")
                     )
                 
             return mutate_func(root, info, *args, **kwargs)

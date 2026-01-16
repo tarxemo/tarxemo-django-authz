@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="tarxemo-django-authz",
-    version="0.2.1",
+    version="0.2.2",
     author="TarXemo",
     description="A comprehensive, reusable Django authorization framework supporting RBAC and PBAC",
     long_description=long_description,
